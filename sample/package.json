@@ -1,0 +1,26 @@
+{
+  "name": "akashic-rclick-plugin-sample",
+  "version": "0.0.0",
+  "description": "",
+  "main": "script/main.js",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf ./script",
+    "build": "npm run clean && tsc && akashic scan asset",
+    "start": "akashic serve -s nicolive"
+  },
+  "author": "asmka",
+  "license": "MIT",
+  "devDependencies": {
+    "@akashic/akashic-engine": "^3.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "eslint": "^8.10.0",
+    "prettier": "^2.5.1",
+    "rimraf": "~3.0.2",
+    "typescript": "~4.6.2"
+  },
+  "dependencies": {
+    "@asmka/akashic-rclick-plugin": "^0.1.9"
+  }
+}
